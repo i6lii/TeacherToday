@@ -1,0 +1,33 @@
+:root {
+  font-family: 'IBM Plex Sans Arabic', Tahoma, sans-serif;
+  color: #10233f;
+  background: #f7f8fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #10233f;
+  background: #f4d979;
+}
