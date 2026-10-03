@@ -26,3 +26,7 @@ npm run dev
 من إعدادات المستودع، افتح **Settings → Pages** واجعل **Build and deployment → Source** هو **GitHub Actions**. بعدها ينشر Workflow الموقع تلقائيًا عند كل دفع إلى `main` على `https://i6lii.github.io/TeacherToday/`.
 
 لتفعيل Supabase على الموقع المنشور، أضف `VITE_SUPABASE_URL` و`VITE_SUPABASE_ANON_KEY` كـ Actions secrets في إعدادات المستودع.
+
+## النشر على Render
+
+أنشئ خدمة **Web Service** باستخدام Build Command `npm ci && npm run build` وStart Command `npm run start`. يقدّم أمر التشغيل ملفات `dist` على المنفذ الذي يحدده Render.
