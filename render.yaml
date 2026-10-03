@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: teacher-today
+    name: teachertoday
     runtime: static
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
