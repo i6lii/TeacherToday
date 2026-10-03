@@ -20,3 +20,9 @@ npm run dev
 5. أعد تشغيل خادم التطوير أو أعد بناء الموقع.
 
 تتيح السياسات قراءة أسماء المشاركين وإجاباتهم للجميع، بينما تحفظ كل مشاركة بهوية مجهولة مستقلة وتقصر تعديل الإجابة على صاحبها. لا تخزّن معلومات حساسة، ولا تضع `service_role` key في الواجهة.
+
+## النشر على GitHub Pages
+
+من إعدادات المستودع، افتح **Settings → Pages** واجعل **Build and deployment → Source** هو **GitHub Actions**. بعدها ينشر Workflow الموقع تلقائيًا عند كل دفع إلى `main` على `https://i6lii.github.io/TeacherToday/`.
+
+لتفعيل Supabase على الموقع المنشور، أضف `VITE_SUPABASE_URL` و`VITE_SUPABASE_ANON_KEY` كـ Actions secrets في إعدادات المستودع.

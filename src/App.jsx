@@ -313,7 +313,7 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <a className="brand" href="#home" onClick={(event) => { event.preventDefault(); setPhase('welcome') }}>
-          <img className="brand-mark" src="/td-logo.svg" alt="TD" />
+          <img className="brand-mark" src={`${import.meta.env.BASE_URL}td-logo.svg`} alt="TD" />
           <span className="brand-copy"><strong>معلّم اليوم</strong></span>
         </a>
         <div className="topbar-actions">
